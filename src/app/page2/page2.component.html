@@ -1,0 +1,201 @@
+<div class="container-fluid">
+    <div class="nav-container">
+        <app-navbar2></app-navbar2>
+    </div>
+
+    <div class="img-container">
+        <img src="../../assets/Images/Ph fullscreen.svg" class="img-fluid bg-cover" alt="">
+    </div>
+
+    <div class="row content">
+        <div class="heading manuka row">
+            ZepHR Impedance
+        </div>
+
+        <div class="row para1">
+            Choosing the appropriate ambulatory reflux test is more important than ever.
+        </div>
+
+        <div class="row para1">
+            <span>
+                <strong>Zvu® Functional GI Software provides comprehensive acquisition and analysis tools for reflux monitoring – for detecting acid and nonacid reflux, on or off PPIs.  </strong>
+            </span>
+
+               <span class="mt-3">
+               ~ Includes the data and normal values based on the latest publication from the Lyon Consensus.
+               </span>
+               <span class="mt-2">
+               ~ Automatically adjusts normal values whether the study is performed on or off PPIs.
+               </span>
+               <span class="mt-2">
+               ~ Includes automated analysis of Mean Nocturnal Baseline Impedance (MNBI) and calculates both DeMeester and Boix-Ochoa composite scores.
+               </span>
+               <span class="mt-2">
+               ~ Provides automated detection and analysis of full column and laryngopharyngeal reflux episodes when using an LPR probe.
+               </span>
+               <span class="mt-2">
+                ~ Reduces overall review time with AutoSCAN® automated analysis.
+               </span>
+               <span class="mt-2">
+                ~ Simplified controls allow for easy transition between color and conventional waveform views, including both the impedance and pH data.
+               </span>
+               <span class="mt-2">
+                ~ Customizable reports and multiple report formats available.
+               </span>
+               <span class="mt-2">
+                ~ Ability to seamlessly access the study and the report when connected to the facility’s network.
+               </span>
+        </div>
+
+        <span class="mt-3">
+            <a href="../../assets/pdfs/PH Imp.pdf" download="ZepHR Impedance" class="downloadalbe">ZepHR Impedance catalogue</a>
+        </span>
+
+        <hr class="divider">
+
+        <!-- information C 1 -->
+        <div class="information-container">
+    
+            <div class="accordion-container1">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed = !isCollapsed">Insights into the Patient Study & Report</span>
+                    <span
+                        *ngIf="isCollapsed"
+                        class="toggle"
+                        (click)="isCollapsed = !isCollapsed"
+                        [attr.aria-expanded]="!isCollapsed"
+                        aria-controls="collapseExample" >Expand
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed"
+                    class="toggle"
+                    (click)="isCollapsed = !isCollapsed"
+                    [attr.aria-expanded]="!isCollapsed"
+                    aria-controls="collapseExample" >Collapse
+                </span>
+                </div>
+
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="isCollapsed">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                            View the patient study using the Fit to Probe View (below) or the Standard View. Reflux episodes are highlighted for easy visualization with associated metrics displayed at the left of the screen.
+                           </span> 
+                           <img src="../../assets/Images/Ph-graph1.svg" class="img-fluid ph-graphone mt-4 mb-4 mx-auto" alt="">
+                           <hr class="divider">
+                           <span>
+                             Reports are customizable, and multiple report formats are available.
+                           </span>
+                           <img src="../../assets/Images/phgraph2.svg" class="img-fluid ph-graphone mt-4 mb-4 mx-auto" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Information C 1 ends -->
+
+        <hr class="divider">
+
+         <!-- information C 2 -->
+         <div class="information-container">
+    
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed2 = !isCollapsed2">ZepHR Impedance/pH Recorder</span>
+                    <span
+                        *ngIf="isCollapsed2"
+                        class="toggle"
+                        (click)="isCollapsed2 = !isCollapsed2"
+                        [attr.aria-expanded]="!isCollapsed2"
+                        aria-controls="collapseExample" > Collapse
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed2"
+                    class="toggle"
+                    (click)="isCollapsed2 = !isCollapsed2"
+                    [attr.aria-expanded]="!isCollapsed2"
+                    aria-controls="collapseExample" >Expand
+                </span>
+                </div>
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="!isCollapsed2">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span class="mt-3">
+                            ~ Small and lightweight with easy-to-use interface.
+                            </span>
+                           <span class="mt-3">
+                           ~ Three large easy to identify programmable symptom buttons.
+                           </span>
+                           <span class="mt-2">
+                           ~ Additional dedicated buttons for upright and recumbent positions, meal times, back light, and diary.
+                           </span>
+                           <span class="mt-2">
+                           ~ SD Card for quick, effortless data download between patient uses.
+                           </span>
+                           <span class="mt-2">
+                           ~ Two year manufacturer’s warranty on the ZepHr Recorder.
+                           </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Information C 2 ends -->
+
+        <hr class="divider">
+
+         <!-- information C 3 -->
+         <div class="information-container">
+    
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed3 = !isCollapsed3">ComforTEC Z/pH and pH-only Probes</span>
+                    <span
+                        *ngIf="isCollapsed3"
+                        class="toggle"
+                        (click)="isCollapsed3 = !isCollapsed3"
+                        [attr.aria-expanded]="!isCollapsed3"
+                        aria-controls="collapseExample" >Collapse
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed3"
+                    class="toggle"
+                    (click)="isCollapsed3 = !isCollapsed3"
+                    [attr.aria-expanded]="!isCollapsed3"
+                    aria-controls="collapseExample" >Expand
+                </span>
+                </div>
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="!isCollapsed3">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span class="mt-3">
+                           ~ The widest range of standard probe configurations to meet your clinical needs for impedance/pH and pH-only studies.
+                            </span>
+                           <span class="mt-3">
+                           ~ Multiple sensor configurations available to accommodate a variety of study requirements and esophageal lengths.
+                           </span>
+                           <span class="mt-2">
+                           ~ Specially-formulated polyurethane, which softens in response to body temperature, optimizing ease of insertion and enhancing patient comfort.
+                           </span>
+                           <span class="mt-2">
+                           ~ Three probe sizes to detect full column and laryngopharyngeal reflux with positioning bands for precise placement just above the UES when a prior manometry study is not available.
+                           </span>
+                           <span class="mt-2">
+                           ~ Single-use, Non-sterile.
+                           </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container 3 ends -->
+
+
+        <hr class="dividerlast">
+
+    </div>
+
+    <app-whatwedo></app-whatwedo>
+
+    <app-footer></app-footer>
+</div>

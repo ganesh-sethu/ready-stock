@@ -1,0 +1,72 @@
+<div class="container-fluid nav-cstm hide_nav">
+    <div class="nav-container text-dark d-flex align-items-center justify-content-between">
+        <div class="logo"><img src="../../assets/Images/brandlogo.svg" class="img-fluid logo-img" alt=""> <span class="brand-name">Ready Stock</span></div>
+        <div class="nav-links d-flex flex-row">
+            <span class="me-5 clickable d-flex flex-row align-items-center" routerLink="/home" routerLinkActive="active">
+                 <span>Home</span>
+             </span>
+             <span class="me-5">
+                <div ngbDropdown class="clickable">
+                    <span type="button" class="clickable" id="dropdownBasic1" ngbDropdownToggle>
+                        Products
+                    </span>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdownBasic1">
+                        <span class="clickable-sub" ngbDropdownItem routerLink="/high-resolution-manometry" routerLinkActive="active">High Resolution Manometry</span>
+                        <span class="clickable-sub" ngbDropdownItem routerLink="/ZepHR" routerLinkActive="active">ZepHR Impedance</span>
+                        <span class="clickable-sub" ngbDropdownItem routerLink="/hydrogen-breathe-test" routerLinkActive="active">Hydrogen Breath Test</span>
+                        <span class="clickable-sub" ngbDropdownItem routerLink="/catheter" routerLinkActive="active">Radio Opaque Markers</span>
+                    </div>
+                </div>
+            </span>
+            <span class="clickable  me-5" routerLink="/contact" routerLinkActive="active"> <span>Contact us</span> </span>
+            <span class="clickable  me-5" routerLink="/testimonial" routerLinkActive="active"> <span>Testimonials</span> </span>
+            <span class="clickable" routerLink="/accessories" routerLinkActive="active"> <span>Accessories</span> </span>
+        </div>
+    </div>
+</div>
+
+<div class="information-container mobile_nav">
+    
+    <div class="accordion-container">
+        <div class="d-flex flex-row align-items-center justify-content-between">
+            <span class="btn-question" (click)="isCollapsed2 = !isCollapsed2">
+                <div class="logo"><img src="../../assets/Images/brandlogo.svg" class="img-fluid logo-img" alt=""> <span class="brand-name">Ready Stock</span></div>
+            </span>
+            <span
+                *ngIf="isCollapsed2"
+                class="toggle"
+                (click)="isCollapsed2 = !isCollapsed2"
+                [attr.aria-expanded]="!isCollapsed2"
+                aria-controls="collapseExample" > 
+                <img src="../../assets/Images/close.svg" alt="" class="menu-icon">
+            </span>
+            <span
+            *ngIf="!isCollapsed2"
+            class="toggle"
+            (click)="isCollapsed2 = !isCollapsed2"
+            [attr.aria-expanded]="!isCollapsed2"
+            aria-controls="collapseExample" >
+            <img src="../../assets/Images/menu.svg" alt="" class="menu-icon">
+        </span>
+        </div>
+        <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="!isCollapsed2">
+            <div class="card nav-card">
+                <div class="card-body d-flex flex-column">
+                    <div class="nav-links d-flex flex-column">
+                        <span class="mt-4 clickable_mobile d-flex flex-row align-items-center" routerLinkActive="active" routerLink="/home">
+                             <span>Home</span>
+                         </span>
+                         <span class="clickable_mobile1  mt-4"> <strong>Products</strong></span>
+                         <span class="clickable_mobile  mt-3" routerLink="/high-resolution-manometry" routerLinkActive="active">~ High Resolution Manometry</span>
+                         <span class="clickable_mobile  mt-4" routerLink="/ZepHR" routerLinkActive="active">~ ZepHR Impedance</span>
+                         <span class="clickable_mobile  mt-4" routerLink="/hydrogen-breathe-test" routerLinkActive="active">~ Hydrogen Breath Test</span>
+                         <span class="clickable_mobile  mt-4" routerLink="/catheter" routerLinkActive="active">~ Radio Opaque Markers</span>
+                         <span class="clickable_mobile  mt-4" routerLink="/contact" routerLinkActive="active"> <span>Contact us</span> </span>
+                         <span class="clickable_mobile  mt-4" routerLink="/testimonial" routerLinkActive="active"> <span>Testimonials</span> </span>
+                         <span class="clickable_mobile mt-4" routerLink="/accessories" routerLinkActive="active"> <span>Accessories</span> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,465 @@
+<div class="container-fluid">
+    <div class="nav-container">
+        <app-navbar2></app-navbar2>
+    </div>
+
+    <div class="img-container">
+        <img src="../../assets/Images/Home_Machine.png" class="img-fluid bg-cover" alt="">
+    </div>
+
+    <div class="row content">
+        <div class="heading manuka row">
+            High-Resolution Manometry
+        </div>
+
+        <div class="row para1">
+            <p>High-resolution Manometry <strong>(HRM)</strong> is a gastrointestinal motility diagnostic system that measures intraluminal pressure activity in the gastrointestinal tract using a series of closely spaced pressure sensors. For a Manometry system to be classified as "high-resolution" as opposed to "conventional", the pressure sensors need to be spaced at most 1 cm apart. Two dominant pressure transduction technologies are used: solid state pressure sensors and water perused pressure sensors.</p>
+        </div>
+
+        <div class="row para1">
+            <span>Each pressure transduction technology has its own inherent advantages and disadvantages. HRM systems also require advanced computer hardware and software to store and analyze the Manometry data.
+                <span class="purple-text"> WE CAN PERFORM BOTH OESPHAGAL MANOMETRY AND ANORECTAL MANOMETRY ON SAME HARDWARE, ONLY CATHETER & SOFTWARE IS DIFFERENT.</span>
+            </span>
+        </div>
+
+        <span class="mt-3">
+            <a href="../../assets/pdfs/HRM Catalogue 2024.pdf" download="HRM" class="downloadalbe">HRM catalogue</a>
+        </span>
+
+        <hr class="divider">
+
+        <!-- information C 1 -->
+        <div class="information-container">
+            <div class="heading1 row">
+                Esophageal Manometry
+            </div>
+    
+            <div class="row para1">
+                <p>
+                    Esophageal Manometry <strong>(muh-NOM-uh-tree)</strong> is a test that shows whether your esophagus is working properly. The esophagus is a long, muscular tube that connects your throat to your stomach. When you swallow, your esophagus contracts and pushes food into your stomach. Esophageal Manometry measures the contractions. The test also measures the force and coordination of esophageal muscles as they move food to your stomach. During esophageal Manometry, a thin, flexible tube (catheter) that contains pressure sensors is passed through your nose, down your esophagus and into your stomach. Esophageal Manometry can be helpful in diagnosing certain disorders that can affect your esophagus.
+                </p>
+            </div>
+    
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed = !isCollapsed">Who may need esophageal manometry?</span>
+                    <span
+                        *ngIf="isCollapsed"
+                        class="toggle"
+                        (click)="isCollapsed = !isCollapsed"
+                        [attr.aria-expanded]="!isCollapsed"
+                        aria-controls="collapseExample" >Expand
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed"
+                    class="toggle"
+                    (click)="isCollapsed = !isCollapsed"
+                    [attr.aria-expanded]="!isCollapsed"
+                    aria-controls="collapseExample" >Collapse
+                </span>
+                </div>
+
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="isCollapsed">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                                Esophageal manometry is used to check whether the muscles in the esophagus are working properly. When the muscles don’t work as they should, you may experience symptoms such as heartburn, trouble or pain when swallowing, chest pain and regurgitation (food coming back up after swallowing). Esophageal manometry helps determine what is causing these symptoms, which could be conditions such as:
+                           </span> 
+                           <span class="mt-3">
+                           ~ <strong>Achalasia</strong> (esophagus muscles don’t help move food down and prevent food from entering the stomach)
+                           </span>
+                           <span class="mt-2">
+                            ~ <strong>Diffuse esophageal spasm</strong> (esophagus muscles contract randomly and interfere with swallowing)
+                           </span>
+                           <span class="mt-2">
+                           ~ <strong>Scleroderma</strong> (a rare disease that may cause some esophagus muscles to stop moving)
+                           </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Information C 1 ends -->
+
+        <hr class="divider">
+
+         <!-- information C 2 -->
+         <div class="information-container">
+            <div class="heading1 row">
+                Anorectal Manometry
+            </div>
+    
+            <div class="row para1">
+                <p>
+                    Anorectal manometry is a noninvasive procedure to evaluate the function of the rectal and anal muscles. This group of muscles, called the anorectal sphincter, controls how stool is released from your body. Anorectal manometry can help determine if these muscles are too loose, too tight or are not engaging at the right moment. This test measures the pressures created by the muscles, the sensation in the rectum (the passageway between the large intestine and the anus), and the neural reflexes necessary for normal bowel movements.
+                </p>
+            </div>
+    
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed1 = !isCollapsed1">Who may need esophageal manometry?</span>
+                    <span
+                        *ngIf="isCollapsed1"
+                        class="toggle"
+                        (click)="isCollapsed1 = !isCollapsed1"
+                        [attr.aria-expanded]="!isCollapsed1"
+                        aria-controls="collapseExample" >Expand
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed1"
+                    class="toggle"
+                    (click)="isCollapsed1 = !isCollapsed1"
+                    [attr.aria-expanded]="!isCollapsed1"
+                    aria-controls="collapseExample" >Collapse
+                </span>
+                </div>
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="isCollapsed1">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                            Coordination between specialized muscles and nerves in the rectum and anal canal is essential for bowel movements. Weak or untimely contractions of the anal sphincter muscles can lead to fecal incontinence, while tight muscles during pushing may contribute to constipation. Anorectal manometry is a diagnostic test for conditions like fecal incontinence and constipation. If you're experiencing persistent bowel issues, your doctor may suggest anorectal manometry.
+                           </span> 
+                           <span class="mt-3">
+                          <strong>Anorectal manometry can also be used to evaluate people with:</strong>   
+                           </span>
+                           <span class="mt-3">
+                           ~ Malformations or injuries of the anus or rectum affecting nearby nerves or muscles.
+                           </span>
+                           <span class="mt-2">
+                           ~ Hirschsprung’s disease, a condition that is present at birth, and affects the muscles of the bowel.
+                           </span>
+                           <span class="mt-2">
+                           ~ Irritable bowel syndrome, a condition that involves both diarrhea and constipation.
+                           </span>
+                           <span class="mt-2">
+                           ~ Rectal cancer if it was treated with procedures that affect the function of anorectal muscles.
+                           </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Information C 2 ends -->
+
+        <hr class="divider">
+
+         <!-- information C 3 -->
+         <div class="information-container">
+            <div class="accordion-container-special">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed2 = !isCollapsed2">What happens during anorectal manometry?</span>
+                    <span
+                        *ngIf="isCollapsed2"
+                        class="toggle"
+                        (click)="isCollapsed2 = !isCollapsed2"
+                        [attr.aria-expanded]="!isCollapsed2"
+                        aria-controls="collapseExample" >Collapse
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed2"
+                    class="toggle"
+                    (click)="isCollapsed2 = !isCollapsed2"
+                    [attr.aria-expanded]="!isCollapsed2"
+                    aria-controls="collapseExample" >Expand
+                </span>
+                </div>
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="!isCollapsed2">
+                    <div class="card mb-4">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                            Anorectal manometry is a fairly simple test and does not require anesthesia. The equipment to perform this test usually includes:
+                           </span> 
+                           <span class="mt-3">
+                           ~ A catheter with a balloon on the end that gets inserted into the anus and rectum.
+                           </span>
+                           <span class="mt-2">
+                           ~ A device connected to the catheter that allows a technician to change the pressure in the balloon by inflating and deflating it, usually with air.
+                           </span>
+                           <span class="mt-2">
+                           ~ Computer software connected to the pressure device that controls the test settings and records data from the balloon.
+                           </span>
+                           <span class="mt-4">
+                            The test usually takes about 30 minutes. Before the procedure, you will need to make sure your digestive tract is empty. Your doctor may recommend using one or more over-the- counter enemas at home before the test.
+                           </span> 
+
+                           <span class="mt-3">
+                            ~ You will need to undress from the waist down or change into a hospital gown, as instructed by the technician or nurse performing the test. A technician will explain the procedure, take a brief health history and answer your questions.
+                            </span>
+                            <span class="mt-2">
+                            ~ You lie down on your left side and bring your knees up into a fetal position.
+                            </span>
+                            <span class="mt-2">
+                            ~ Before starting the anorectal manometry test, the technician may first perform a digital rectal exam by inserting a gloved finger into the anus to feel for abnormalities.
+                            </span>
+                            <span class="mt-2">
+                            ~ A small, flexible, lubricated tube, about the size of a thermometer, with a deflated balloon at the end is inserted into the rectum. The tube is connected to a machine that measures pressure.
+                            </span>
+                            <span class="mt-2">
+                            ~ The technician will position the balloon at various depths inside the rectum and take several benchmark pressure readings.
+                            </span>
+                            <span class="mt-2">
+                            ~ The technician will then inflate the balloon to a certain size and ask you to squeeze, relax, push or cough for brief intervals of time. These activities are repeated with different balloon sizes or positions in the rectum. The anal sphincter muscle pressures are measured each time.
+                            </span>
+                            <span class="mt-2">
+                            ~ To squeeze, you tighten the sphincter muscles as if trying to prevent anything from coming out. Coughing also contracts your anal sphincter.
+                            </span>
+                            <span class="mt-2">
+                            ~ To push or strain, you bear down as if you are trying to have a bowel movement.
+                            </span>
+                            <span class="mt-2">
+                            ~ The technician might also ask you if the sensation in your rectum changes with different balloon sizes. You will need to say when it feels like you need to have a bowel movement.
+                            </span>
+                            <span class="mt-2">
+                            ~ When the test is finished, the technician deflates and removes the balloon.
+                            </span>
+                            <span class="mt-2">
+                            ~ After the examination, you may drive yourself home and go about your normal activities.
+                            </span>
+                        </div>
+                    </div>
+
+                    <p class="btn-question1">Anal Manometry Test Results</p>
+                    <p class="mt-2">
+                        Test results can help your doctor identify the cause of constipation or incontinence and inform a treatment plan.
+                    </p> 
+                    <p class="mt-2">
+                        For instance, the test may reveal weak anal sphincter muscles or poor sensation in the rectum that can contribute to fecal incontinence. These problems can be treated. Biofeedback techniques using anal manometry and special exercises of the pelvic floor muscles can strengthen the muscles and improve sensation.
+                    </p> 
+                    <p class="mt-2">
+                        Test results may show that the anal sphincter muscles do not relax appropriately when you are pushing to have a bowel movement, which may cause constipation. These muscles, too, can be retrained with biofeedback techniques.
+                    </p> 
+                    <p class="btn-question1 mt-3">Risks and Complications of Anorectal Manometry</p>
+                    <p class="mt-2">
+                        Anorectal manometry is a safe, low-risk procedure and complications are rare. Equipment failure is a remote possibility. People who are allergic to latex should inform the nurse or technician before the test.
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <!-- Information C 3 ends -->
+
+        <hr class="divider">
+
+        <!-- information C 3 -->
+        <div class="information-container">
+            <div class="heading1 row">
+               Bio Feedback
+            </div>
+    
+            <div class="row para1">
+                <p>
+                    Biofeedback is a crucial part of anorectal manometry, a test that checks the muscles and nerves in the rectum and anus. It helps patients control their pelvic floor muscles, improving issues like fecal incontinence and constipation.
+                    During the test, a small balloon measures muscle and nerve pressure. Biofeedback uses visual or auditory cues, like a monitor or tones, to teach patients to control their pelvic muscles.
+                    Biofeedback is effective for conditions like incontinence and constipation. It boosts muscle strength, coordination, and overall quality of life. Our company provides user-friendly, accurate biofeedback equipment for anorectal manometry, trusted by healthcare professionals worldwide. Thank you for considering us – we're dedicated to delivering top-quality products and excellent customer service for your patients.
+                </p>
+            </div>
+        </div>
+        <!-- Information C 3 ends -->
+
+        <hr class="divider">
+
+        <!-- information C 4 -->
+        <div class="information-container">
+            <div class="heading1 row">
+                Antroduodenal Manometry
+            </div>
+    
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed3 = !isCollapsed3">What is antroduodenal-manometry?</span>
+                    <span
+                        *ngIf="isCollapsed3"
+                        class="toggle"
+                        (click)="isCollapsed3 = !isCollapsed3"
+                        [attr.aria-expanded]="!isCollapsed3"
+                        aria-controls="collapseExample" >Expand
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed3"
+                    class="toggle"
+                    (click)="isCollapsed3 = !isCollapsed3"
+                    [attr.aria-expanded]="!isCollapsed3"
+                    aria-controls="collapseExample" >Collapse
+                </span>
+                </div>
+
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="isCollapsed3">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                              The antrum is the lower part of the stomach. The duodenum is the first portion of the small intestines. The antrum of the stomach and the duodenum are connected by a muscle called the pyloric sphincter.
+                           </span> 
+                           <span class="mt-3">
+                              Manometry is the study of pressure. Antroduodenal manometry is a way to measure and identify any abnormalities in the coordination and strength of the muscle contractions in the stomach and the duodenum.
+                           </span>
+                           <span class="mt-2">
+                              Abnormalities in strength or coordination of contractions may cause improper digestion. This may result in symptoms including loss of appetite, nausea, gagging, vomiting, abdominal distention, abdominal pain, diarrhea, and constipation.
+                           </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed1 = !isCollapsed1">What happens during the test?</span>
+                    <span
+                        *ngIf="isCollapsed1"
+                        class="toggle"
+                        (click)="isCollapsed1 = !isCollapsed1"
+                        [attr.aria-expanded]="!isCollapsed1"
+                        aria-controls="collapseExample" >Collapse
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed1"
+                    class="toggle"
+                    (click)="isCollapsed1 = !isCollapsed1"
+                    [attr.aria-expanded]="!isCollapsed1"
+                    aria-controls="collapseExample" >Expand
+                </span>
+                </div>
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="!isCollapsed1">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                            You will be asked not to eat for several hours before testing begins.
+                           </span> 
+                           <span class="mt-3">
+                           ~ The doctor will pass a flexible plastic tube through the nose, down the throat into the stomach, and finally into the small intestine. The tube does not interfere with breathing. If you have a gastrostomy, the manometry tube may be placed through the gastrostomy.
+                           </span>
+                           <span class="mt-2">
+                           ~ The tube has holes at regular spaces, that measure pressure at different places in the stomach and duodenum.
+                           </span>
+                           <span class="mt-2">
+                           ~ Once properly placed, the tube is carefully secured with tape to the nose or gastrostomy site.
+                           </span>
+                           <span class="mt-2">
+                           ~ Because sedation and stress affect the contractions of the stomach and intestines, the measurement of pressure will start after you are fully recovered from the catheter placement.
+                           </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed4 = !isCollapsed4">How long does the test take?</span>
+                    <span
+                        *ngIf="isCollapsed4"
+                        class="toggle"
+                        (click)="isCollapsed4 = !isCollapsed4"
+                        [attr.aria-expanded]="!isCollapsed4"
+                        aria-controls="collapseExample" >Collapse
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed4"
+                    class="toggle"
+                    (click)="isCollapsed4 = !isCollapsed4"
+                    [attr.aria-expanded]="!isCollapsed4"
+                    aria-controls="collapseExample" >Expand
+                </span>
+                </div>
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="!isCollapsed4">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                            ~ The antroduodenal-manometry tube is connected to a machine that slowly pushes water through each hole in the tube. The machine then records the pressures against the water trying to flow out of the tube.
+                           </span> 
+                           <span class="mt-3">
+                            ~ Recordings are continued during four to five hours of fasting, then you are given a meal. After the meal, the recordings are continued for another one or two hours. From start to finish, the measurement of pressures usually takes six hours. Medication may be given throughout the test to measure their effect on gastrointestinal motility.
+                           </span>
+                           <span class="mt-3">
+                           ~ While the tube is in place, you will be restricted in activity. Watching TV or reading, as well as storytelling and quiet play for children, are all encouraged. A parent may stay with a child throughout the test.
+                           </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed5 = !isCollapsed5">Does the test hurt?</span>
+                    <span
+                        *ngIf="isCollapsed5"
+                        class="toggle"
+                        (click)="isCollapsed5 = !isCollapsed5"
+                        [attr.aria-expanded]="!isCollapsed5"
+                        aria-controls="collapseExample" >Collapse
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed5"
+                    class="toggle"
+                    (click)="isCollapsed5 = !isCollapsed5"
+                    [attr.aria-expanded]="!isCollapsed5"
+                    aria-controls="collapseExample" >Expand
+                </span>
+                </div>
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="!isCollapsed5">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                            The measurement of pressure during the antroduodenal-manometry is painless; you will not feel the tube inside your stomach and intestine.
+                           </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Information C 4 ends -->
+
+        <hr class="divider">
+
+        <!-- information C 5 -->
+        <div class="information-container">
+            <div class="heading1 row">
+                Colonic Manometry
+            </div>
+
+            <div class="accordion-container">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <span class="btn-question" (click)="isCollapsed6 = !isCollapsed6">Briefed Information</span>
+                    <span
+                        *ngIf="isCollapsed6"
+                        class="toggle"
+                        (click)="isCollapsed6 = !isCollapsed6"
+                        [attr.aria-expanded]="!isCollapsed6"
+                        aria-controls="collapseExample" >Expand
+                    </span>
+                    <span
+                    *ngIf="!isCollapsed6"
+                    class="toggle"
+                    (click)="isCollapsed6 = !isCollapsed6"
+                    [attr.aria-expanded]="!isCollapsed6"
+                    aria-controls="collapseExample" >Collapse
+                </span>
+                </div>
+                <div #collapse="ngbCollapse" class="card-parent" [(ngbCollapse)]="isCollapsed6">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                           <span>
+                            Colonic manometry is a test that measures the pressure and function of the colon's muscles and nerves. It's used for conditions like chronic constipation. A small catheter with pressure sensors is inserted into the rectum to gather data on muscle coordination and stool transit time.
+                            Our company specializes in top-quality colonic manometry equipment trusted by healthcare professionals worldwide. Our user-friendly products, including catheters and monitoring systems, provide accurate, real-time data for diagnosing and treating gastrointestinal disorders.
+                            We're committed to exceptional customer service, offering support and expertise to help you make the most of our products. Thank you for considering us for your colonic manometry needs. We're here to assist you in providing the best care for your patients.
+                           </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Information C 5 ends -->
+
+        <hr class="dividerlast">
+
+    </div>
+
+    <app-whatwedo></app-whatwedo>
+
+    <app-footer></app-footer>
+</div>

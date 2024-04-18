@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    position: fixed;
+    width: 100vw;
+    z-index: 99999;
+  }
+
+.content-body {
+    background-color: #ca4542;
+    // position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 80px 60px;
+    z-index: -1;
+    border-bottom: 1px solid #1E1E1E;
+}
+
+.hero-text {
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+
+.sub-text {
+    color: #fff;
+    margin-top: 24px;
+    font-size: 18px;
+    opacity: 60%;
+    line-height: 24px;
+}
+
+.btn-know {
+    margin-top: 42px;
+
+    background-color: #1E1E1E;
+    color: #EDECFF;
+    border-radius: 50px;
+    font-size: 16px;
+
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-mail {
+    margin-top: 42px;
+
+    background-color: #1E1E1E;
+    // border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-know:hover {
+    background-color: #fff;
+}
+
+.whatsapp {
+    margin-top: -3px !important;
+    // height: 24px;
+}
+
+.mail_i {
+    margin-top: -6px;
+    height: 24px;
+}
+
+
+
+.what_we_do_container {
+    padding: 32px 60px;
+}
+
+
+.what_we_handle_container {
+    padding: 32px 60px;
+}
+
+.text-1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #292929;
+    letter-spacing: 1px;
+}
+
+.text-highlight-1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #ca4542;
+    letter-spacing: 1px;
+}
+
+.box {
+    width: 380px;
+}
+
+.scroll-container {
+    background-color: #0D0F10;
+    padding: 20px;
+    color: #EDECFF;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container1 {
+    border: 1px solid #E5E5E5;
+    padding: 12px 12px;
+    border-radius: 80px;
+    max-width: 400px;
+    margin-right: 18px;
+
+    transition: all 0.5s ;
+    
+    .circle-img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: #0D0F10;
+    }
+
+    .name-wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 0 12px;
+
+        .name_of_machine {
+            font-size: 20px;
+            font-weight: 600;
+            color: #292929;
+        }
+
+        .link {
+            color: #448DEF;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 6px;
+        }
+
+        .arrow {
+            height: 10px;
+            width: auto;
+        }
+    }
+}
+
+.container1:hover {
+    cursor: pointer;
+    background-color: rgba(202, 69, 66, 0.08);;
+
+    .link {
+        text-decoration: underline;
+    }
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden !important;
+
+    height: 450px;
+    width: 450px;
+
+    border-radius: 8px;
+}
+
+.three-rows {
+    height: 450px;
+    width: auto;
+}
+
+.m2 {
+    height: 450px;
+    width: 450px;
+}
+
+.fade-container {
+    padding: 20px;
+    position: absolute;
+
+    background-color: #0d0f1068;
+
+    bottom: 10px;
+    right: 0;
+    left: 0;
+
+    z-index: 1;
+}
+
+.content-sub {
+    color: #fff;
+    font-size: 24px;
+}
+
+.link-inside {
+    margin-top: 8px;
+    color: #448DEF;
+    font-size: 16px;
+}
+
+.link-inside:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cstm-chip {
+    position: absolute;
+    top: 24px;
+    right: 14px;
+
+    padding: 8px 14px;
+    font-weight: 500;
+
+    font-size: 16px;
+    background-color: white;
+
+    border-radius: 40px;
+}
+
+.row-1-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 8px;
+}
+
+.heading-small {
+    font-size: 24px;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.img-wrap-cont {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+
+// this will be visible for mobile and tab
+@media only screen and (max-width: 771px) {
+    .content-body {
+        padding: 32px;
+    }
+
+    .buttons_wrapper {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .btn-know {
+        margin-top: 24px !important;
+    
+        background-color: #1E1E1E;
+        color: #EDECFF;
+        border-radius: 50px;
+        font-size: 16px;
+        height: 62px;
+        width: 80vw;
+    
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-mail {
+        margin-top: 24px !important;
+    
+        // background-color: #1E1E1E;
+        // border: 1px solid #1E1E1E;
+        color: #fff;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        height: 62px;
+        width: 80vw;
+    
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+ } 
